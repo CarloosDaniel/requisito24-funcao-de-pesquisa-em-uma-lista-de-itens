@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <title>Lista de Itens</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Lista de Itens</h1><br>
+    <section class="search-container">
+        <label for="campo-busca">Pesquisar:</label><br>
+        <input type="text" id="search-input" name="campo-busca" placeholder="Digite sua pesquisa" oninput="filterItems()"><br>
+        <select id="search-criteria" onchange="filterItems()">
+            <option value="fruta">Fruta</option>
+            <option value="legumes">Legume</option>
+            <option value="verdura">Verduras</option>
+        </select>
+        <button type="submit">Buscar</button><br>
+    </section>
+    <ul id="item-list">
+        <li data-fruta="Banana" data-legumes=" " data-verdura=" ">Banana</li>
+        <li data-fruta="Maça" data-legumes=" " data-verdura=" ">Maça</li>
+        <li data-fruta=" " data-legumes=" " data-verdura="Alface">Alface</li>
+        <li data-fruta=" " data-legumes="Cenoura" data-verdura=" ">Cenoura</li>
+        <li data-fruta=" " data-legumes="Batata" data-verdura=" ">Batata</li>
+        <li data-fruta="Laranja" data-legumes=" " data-verdura=" ">Laranja</li>
+        <li data-fruta="Melão" data-legumes=" " data-verdura=" ">Melão</li>
+        <li data-fruta="Mamão" data-legumes=" " data-verdura=" ">Mamão</li>
+        <li data-fruta=" " data-legumes=" " data-verdura="Ervilhas">Ervilha</li>
+        <li data-fruta=" " data-legumes=" " data-verdura="Abóbora">Abóbora</li>
+        <li data-fruta=" " data-legumes="Alcachofra" data-verdura=" ">Alcachofra</li>
+        <li data-fruta=" " data-legumes="Beterraba" data-verdura=" ">Beterraba</li>
+        <li data-fruta=" " data-legumes="Cogumelo" data-verdura=" ">Cogumelo</li>
+        <li data-fruta=" " data-legumes=" " data-verdura="Cebola">Cebola</li>
+        <li data-fruta=" " data-legumes=" " data-verdura="Alho">Alho</li>
+    </ul>
+    </div>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
